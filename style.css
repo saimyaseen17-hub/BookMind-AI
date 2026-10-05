@@ -1,0 +1,415 @@
+/* =========================================================
+   BOOKMIND AI — LIGHT ICE CRYSTAL / NEON BLUE
+   ========================================================= */
+
+
+/* =========================
+   MAIN BACKGROUND
+   ========================= */
+
+[data-testid="stAppViewContainer"] {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 200, 255, 0.14),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 0% 50%,
+            rgba(80, 170, 255, 0.08),
+            transparent 30%
+        ),
+        #f5fbff;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+   ========================= */
+
+.block-container {
+    max-width: 900px;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
+
+h1 {
+    text-align: center;
+
+    font-size: 48px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: -1.5px;
+
+    color: #073b66 !important;
+
+    text-shadow:
+        0 0 8px rgba(0, 190, 255, 0.25),
+        0 0 22px rgba(0, 170, 255, 0.12);
+
+    margin-bottom: 4px !important;
+}
+
+
+/* =========================
+   SUBTITLE
+   ========================= */
+
+.subtitle {
+    text-align: center;
+
+    color: #4382a5;
+
+    font-size: 17px;
+
+    letter-spacing: 0.4px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   DIVIDERS
+   ========================= */
+
+hr {
+    border: none;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(0, 180, 240, 0.55),
+            transparent
+        );
+
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   FILE UPLOADER
+   ========================= */
+
+[data-testid="stFileUploader"] {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.92),
+            rgba(235, 249, 255, 0.85)
+        );
+
+    border: 1px solid
+        rgba(0, 180, 240, 0.35);
+
+    border-radius: 20px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(0, 150, 220, 0.08),
+        inset 0 0 25px rgba(0, 200, 255, 0.04);
+
+    transition: all 0.3s ease;
+}
+
+
+/* =========================
+   UPLOADER HOVER
+   ========================= */
+
+[data-testid="stFileUploader"]:hover {
+
+    border-color:
+        rgba(0, 190, 255, 0.75);
+
+    box-shadow:
+        0 8px 35px rgba(0, 170, 240, 0.14),
+        0 0 18px rgba(0, 200, 255, 0.12);
+}
+
+
+/* =========================
+   DROPZONE
+   ========================= */
+
+[data-testid="stFileUploaderDropzone"] {
+
+    background:
+        rgba(240, 251, 255, 0.8);
+
+    border-radius: 15px;
+
+    border:
+        1px dashed
+        rgba(0, 170, 230, 0.45);
+}
+
+
+/* =========================
+   TEXT
+   ========================= */
+
+p,
+label,
+span {
+
+    color: #28536e;
+}
+
+
+/* =========================
+   SUCCESS MESSAGE
+   ========================= */
+
+[data-testid="stAlert"] {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(230, 251, 255, 0.95),
+            rgba(245, 253, 255, 0.95)
+        );
+
+    border:
+        1px solid
+        rgba(0, 190, 240, 0.35);
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 150, 220, 0.07);
+}
+
+
+/* =========================
+   BOOKMIND HEADING
+   ========================= */
+
+h3 {
+
+    color: #073b66 !important;
+
+    font-size: 26px !important;
+
+    font-weight: 750 !important;
+
+    text-shadow:
+        0 0 10px rgba(0, 180, 255, 0.15);
+
+    margin-top: 15px !important;
+}
+
+
+/* =========================
+   CHAT MESSAGES
+   ========================= */
+
+[data-testid="stChatMessage"] {
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(239, 250, 255, 0.92)
+        );
+
+    border:
+        1px solid
+        rgba(0, 180, 240, 0.18);
+
+    border-radius: 18px;
+
+    padding: 14px 18px;
+
+    margin-bottom: 12px;
+
+    box-shadow:
+        0 5px 22px rgba(0, 140, 210, 0.06);
+}
+
+
+/* =========================
+   CHAT TEXT
+   ========================= */
+
+[data-testid="stChatMessageContent"] {
+
+    color: #173f58;
+
+    font-size: 15.5px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CHAT INPUT
+   ========================= */
+
+[data-testid="stChatInput"] {
+
+    margin-top: 18px;
+}
+
+
+[data-testid="stChatInput"] > div {
+
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    border:
+        1px solid
+        rgba(0, 180, 240, 0.35);
+
+    border-radius: 17px;
+
+    box-shadow:
+        0 5px 25px rgba(0, 150, 220, 0.08);
+
+    transition: all 0.25s ease;
+}
+
+
+/* =========================
+   INPUT FOCUS
+   ========================= */
+
+[data-testid="stChatInput"] > div:focus-within {
+
+    border-color:
+        rgba(0, 200, 255, 0.9);
+
+    box-shadow:
+        0 0 8px rgba(0, 200, 255, 0.25),
+        0 5px 30px rgba(0, 150, 240, 0.12);
+}
+
+
+/* =========================
+   INPUT TEXT
+   ========================= */
+
+[data-testid="stChatInput"] textarea {
+
+    color: #173f58 !important;
+
+    caret-color: #00aeea;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+
+    border-radius: 10px !important;
+
+    border:
+        1px solid
+        rgba(0, 175, 235, 0.3) !important;
+
+    background:
+        rgba(235, 250, 255, 0.8) !important;
+
+    transition: all 0.25s ease !important;
+}
+
+
+button:hover {
+
+    border-color:
+        rgba(0, 190, 255, 0.75) !important;
+
+    box-shadow:
+        0 0 12px rgba(0, 190, 255, 0.18) !important;
+}
+
+
+/* =========================
+   CAPTION
+   ========================= */
+
+[data-testid="stCaptionContainer"] {
+
+    color: #6091aa;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+
+    text-align: center;
+
+    color: #6d9db4;
+
+    font-size: 13px;
+
+    letter-spacing: 0.5px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #edf8fc;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        linear-gradient(
+            #5bdcff,
+            #009fe3
+        );
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .block-container {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: 36px !important;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    [data-testid="stChatMessageContent"] {
+        font-size: 14px;
+    }
+}
